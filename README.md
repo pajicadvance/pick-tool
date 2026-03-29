@@ -1,13 +1,11 @@
-# Multicutter
+# Pick Tool
 
-This is a fork of [rotgruengelb's Stonecutter Mod Template](https://github.com/rotgruengelb/stonecutter-mod-template) altered to fit my specific needs.
+This is a lightweight mod that allows using the "Pick block" key while holding a tool to swap to the effective tool for the targeted block.
 
-Differences from original template:
+Works with all tools, both vanilla and modded ones.
 
-- Adjusted buildscripts to support unobfuscated versions of the game, starting with 26.1.
-  - The template no longer supports older versions.
-- Added dependencies:
-  - Fzzy Config as the config API
-  - Mixson for runtime JSON patching
-- Disabled datagen.
-- Disabled javadoc build.
+If there are multiple effective tools for the block in the inventory, consequent pick blocks will cycle through them.
+
+This mod has no dependencies. It works when installed on the server without clients having to install it.
+
+![gif](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW56YTJpaDB3enNzamhrY2xzNGwxcGRpbzM2ejZ5bzNkeHF3NzdidSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rNyj2hjVIbnOn7s72P/giphy.gif)
