@@ -1,1 +1,1 @@
-- Fix mod icon
+- Added tool blacklist.
