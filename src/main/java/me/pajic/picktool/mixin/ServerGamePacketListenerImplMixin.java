@@ -68,8 +68,8 @@ public abstract class ServerGamePacketListenerImplMixin {
                     inventory.setItem(mainHandItemSlot, swapItem.stack());
                     inventory.setItem(swapItem.slot(), mainHandItem);
                     includeData.set(false);
-                    return ItemStack.EMPTY;
                 }
+				return ItemStack.EMPTY;
             }
         }
         return original;
@@ -94,8 +94,7 @@ public abstract class ServerGamePacketListenerImplMixin {
 			if (s.startsWith("#")) {
 				Identifier id = Identifier.tryParse(s.substring(1));
 				if (id != null) return itemStack.is(TagKey.create(Registries.ITEM, id));
-			}
-			else {
+			} else {
 				Identifier id = Identifier.tryParse(s);
 				if (id != null) return itemStack.is(ResourceKey.create(Registries.ITEM, id));
 			}

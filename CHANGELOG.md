@@ -1,1 +1,1 @@
-- Added tool blacklist.
+- Tiny logic fix.
