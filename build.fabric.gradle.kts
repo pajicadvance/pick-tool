@@ -7,7 +7,7 @@ platform {
 	loader = "fabric"
 	dependencies {
 		required("minecraft") {
-			versionRange = ">=${prop("deps.minecraft")}"
+			versionRange = ">=${prop("deps.minecraft").replace("rc-", "rc.")}"
 		}
 		required("fabricloader") {
 			versionRange = ">=${libs.fabric.loader.get().version}"

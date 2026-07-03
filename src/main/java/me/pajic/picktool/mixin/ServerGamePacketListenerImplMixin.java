@@ -51,7 +51,7 @@ public abstract class ServerGamePacketListenerImplMixin {
             ItemStack mainHandItem = player.getMainHandItem();
             if (mainHandItem.has(DataComponents.TOOL)) {
                 Inventory inventory = player.getInventory();
-                for (int i = 0; i < inventory.getContainerSize(); i++) {
+                for (int i = 0; i < inventory.getNonEquipmentItems().size(); i++) {
                     ItemStack item = inventory.getItem(i);
                     if (pt$isAllowed(item) && !ItemStack.isSameItemSameComponents(item, mainHandItem) && pt$testTool(item, blockState)) {
 						if (!pt$swapItems.isEmpty() && !pt$compareTools(item, pt$swapItems.peekFirst().stack(), blockState)) {

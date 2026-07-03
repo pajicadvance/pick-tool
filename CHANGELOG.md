@@ -1,1 +1,1 @@
-- Tiny logic fix.
+- Don't swap to items from non-inventory slots.
